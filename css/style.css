@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --black: #1E1E1E;
+    --white: #fafafa;
+    --gray: #dededecb;
+    --red: #fc0303;
+    --gap: 3rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 1.2;
+}
+
+.black-bg {
+    background: var(--black);
+    color: var(--gray);
+}
+
+.white-bg {
+    background: var(--white);
+    color: var(--gray);
+}
+  
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.menu {
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--white);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 40%;
+}
+
+.logo_menu {
+    width: 6rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--white);
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: var(--red);
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.8rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--red);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu-spacing {
+    height: 49px;
+}
+
+.img_head {
+    max-width: 100%;
+}
+
+.pg_inicial-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--gap);
+    height: 70vh;
+}
+
+.pg_inicial-text-content, .pg_inicial-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.pg_inicial-text-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.pg_inicial-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.idea {
+    padding: 5%;
+    text-align: center;
+}
+
+.idea h1 {
+    padding-bottom: 2.5%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.idea img {
+    width: 60%;
+    border: 1px solid var(--white);
+}
+
+
+
+.about-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
