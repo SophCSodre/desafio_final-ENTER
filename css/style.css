@@ -15,6 +15,11 @@ body {
     line-height: 1.2;
 }
 
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
 .black-bg {
     background: var(--black);
     color: var(--gray);
@@ -30,6 +35,8 @@ body {
     margin: 0 auto;
     padding: 10rem var(--gap);
 }
+
+/* -------------------------------------------------------------- */
 
 .menu {
     background-color: var(--black);
@@ -92,15 +99,19 @@ body {
     height: 49px;
 }
 
+/* -------------------------------------------------------------- */
+
 .img_head {
     max-width: 100%;
 }
+
+/* -------------------------------------------------------------- */
 
 .pg_inicial-content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: var(--gap);
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .pg_inicial-text-content, .pg_inicial-img {
@@ -116,19 +127,22 @@ body {
     margin-bottom: 2rem;
 }
 
-.pg_inicial-img img {
+.pg_inicial-img img,
+.pg_inicial-img svg {
     max-width: 100%;
     height: auto;
 }
 
+/* -------------------------------------------------------------- */
+
 .idea {
-    padding: 5%;
+    padding: 4%;
     text-align: center;
 }
 
 .idea h1 {
-    padding-bottom: 2.5%;
-    font-size: 3rem;
+    padding-bottom: 2%;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--white);
 }
@@ -138,13 +152,60 @@ body {
     border: 1px solid var(--white);
 }
 
+/* -------------------------------------------------------------- */
 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--gap);
+}
+
+.group {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--gray);
+    padding: 5%;
+}
+
+.group h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.group h3 {
+    font-weight: bold;
+}
+
+.tb-group p {
+    padding-top: 3%;
+}
+
+.img_group {
+    width: 50%;
+    margin-right: 3%;
+}
+
+.tb-group img {
+    float: left;
+}
+
+/* -------------------------------------------------------------- */
 
 .about-content {
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    height: 50vh;
+    min-height: 70vh;
     text-align: center;
+}
+
+.about-content h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
 }
