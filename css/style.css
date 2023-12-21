@@ -4,6 +4,7 @@
     --black: #1E1E1E;
     --white: #fafafa;
     --gray: #dededecb;
+    --light_gray: #eee;
     --red: #fc0303;
     --gap: 3rem;
 }
@@ -222,3 +223,74 @@ body .full-width {
 }
 
 /* -------------------------------------------------------------- */
+
+.contato{
+    background-color: var(--light_gray);
+    text-align: center;
+}
+
+.contato h2{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.contato-container{
+    display: grid;
+    flex-flow: row;
+    grid-template-columns: 1fr 1fr;
+    min-height: 40vh;
+}
+
+@media screen and (max-width: 800px) {
+    .contato-container{
+        
+        display: flex;
+        flex-flow: column;
+        min-height: 40vh;
+    }   
+
+    .cardimg {
+        max-width: 20rem;
+    }
+}
+
+.cardimg{
+    max-width: 15rem;
+}
+
+.card{
+    padding: 6rem;
+}
+
+.card p{
+    font-size: 1.3rem;
+}
+
+.githubimg {    
+    max-width: 2rem;
+}
+/*-----------------------------------------------------*/
+.footer-prime {
+    position: static;
+    left: 0;
+    bottom: 0;
+    height: 110px;
+    width: 100%;
+    background-color: var(--gray);
+    color: white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.footer-prime img {
+    margin-top: 2%;
+    max-width: 100px;
+ }
+
+ .footer-col {
+ 
+}
+
+
