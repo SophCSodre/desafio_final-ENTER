@@ -180,11 +180,16 @@ body .full-width {
 }
 
 .tb-group p {
+    font-size: 60%;
     padding-top: 3%;
 }
 
+.tb-group a {
+  color: var(--red);
+}
+
 .img_group {
-    width: 50%;
+    width: 40%;
     margin-right: 3%;
 }
 
@@ -205,7 +210,15 @@ body .full-width {
 }
 
 .about-content h1{
-    font-size: 2rem;
+
+    font-size: 4rem;
     margin-bottom: 2rem;
     font-weight: bold;
 }
+
+.about-content p{
+
+   text-align: justify;
+}
+
+/* -------------------------------------------------------------- */
